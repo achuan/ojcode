@@ -60,7 +60,6 @@ func createTree(root **TreeNode, i int, array []int){
 	(*root).Val = array[i]
 	createTree(&((*root).Left), 2*i+1, array)
 	createTree(&((*root).Right), 2*i+2, array)
-
 }
 
 func initTree(array []int)*TreeNode{
